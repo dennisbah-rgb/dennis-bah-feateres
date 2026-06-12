@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Hem</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <button id="darkModeBtn">
+        🌙 Dark Mode
+    </button>
+
+    <h1>Public Message Board</h1>
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Sök meddelanden">
+
+    <p id="messageCount">
+        Totalt antal meddelanden: 0
+    </p>
+
+    <div class="form-container">
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Ditt namn">
+
+        <textarea
+            id="message"
+            maxlength="200"
+            placeholder="Skriv ett meddelande">
+        </textarea>
+
+        <p id="charCount">
+            0 / 200 tecken
+        </p>
+
+        <button id="postBtn">
+            Publicera
+        </button>
+
+    </div>
+
+    <h2>Meddelanden</h2>
+
+    <div id="messageBoard"></div>
+
+    <script type="module" src="app.js"></script>
+
+</body>
+</html>
